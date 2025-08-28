@@ -1,0 +1,31 @@
+# Core dependencies
+python-dotenv
+pyspark
+confluent-kafka
+pymongo
+snowflake-connector-python
+pandas
+firebase-admin
+flask
+werkzeug
+requests
+
+# ML/NLP dependencies
+nltk
+numpy
+spacy
+thinc
+blis
+transformers
+torch
+huggingface_hub[hf_xet]
+
+# Optional: Add version pins for reliability
+protobuf
+# Download NLTK data
+# This will be run during container build
+# RUN python -c "import nltk; nltk.download('vader_lexicon')"
+
+# Download SpaCy model
+# This will be run during container build
+# RUN python -m spacy download en_core_web_sm
